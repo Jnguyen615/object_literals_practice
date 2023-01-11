@@ -66,30 +66,30 @@
 // // console.log(studentUpdate(melissa));
 
 
-var allie = {
-    name: "Allie",
-    program: "Front End",
-    module: 1,
-    alum: false,
-    projects: ["Dog Party", "Number Guesser", "Check Yo Self", "Mythical Creatures"],
-};
+// var allie = {
+//     name: "Allie",
+//     program: "Front End",
+//     module: 1,
+//     alum: false,
+//     projects: ["Dog Party", "Number Guesser", "Check Yo Self", "Mythical Creatures"],
+// };
 
 
-function studentLog(student){
-    var statement = `${student.name} is an awesome ${student.program} student! They have build the following projects: `;
+// function studentLog(student){
+//     var statement = `${student.name} is an awesome ${student.program} student! They have build the following projects: `;
 
-    for(var j = 0; j < allie.projects.length; j++) {
-        if(j === allie.projects.length - 1) {
-            statement += `and ${allie.projects[j]}.`;
-        } else {
-            statement += `${allie.projects[j]}, `;
-        }
-    }
+//     for(var j = 0; j < allie.projects.length; j++) {
+//         if(j === allie.projects.length - 1) {
+//             statement += `and ${allie.projects[j]}.`;
+//         } else {
+//             statement += `${allie.projects[j]}, `;
+//         }
+//     }
 
-    return statement;
-}
+//     return statement;
+// }
 
-    console.log(studentLog(allie));
+//     console.log(studentLog(allie));
 
 // function printGreeting(senshi) {
 //     console.log(`Hello, ${senshi}!`);
@@ -102,27 +102,27 @@ function studentLog(student){
 // }
 // multiply(2, 2);
 
-var sailorJupiter = {
-    name: "Makoto",
-    birthday: "December 10th",
-    age: 27,
-    attacks: ["Jupiter Thunder Dragon", "Flower hurricane", "Sparkling wide pressue",]
-};
+// var sailorJupiter = {
+//     name: "Makoto",
+//     birthday: "December 10th",
+//     age: 27,
+//     attacks: ["Jupiter Thunder Dragon", "Flower hurricane", "Sparkling wide pressue",]
+// };
 // console.log(sailorJupiter);
 
-function senshi(senshi1) {
-    var statement = `${senshi1.name} is a part of the Sailor Senshi. Her birthday is ${senshi1.birthday}, she is age ${senshi1.age} and her main attacks are ${senshi1.attacks}.`;
+// function senshi(senshi1) {
+//     var statement = `${senshi1.name} is a part of the Sailor Senshi. Her birthday is ${senshi1.birthday}, she is age ${senshi1.age} and her main attacks are ${senshi1.attacks}.`;
 
-    // for (var i = 0; i < senshi1.attacks.length; i++) {
-    //     if (i === sailorJupiter.attacks.length - 1) {
-    //         statement += `and ${sailorJupiter.attacks[i]}.`;
-    //     } else {
-    //         statement += `${sailorJupiter.attacks[i]}, `;
-    //     }
-    // }
-    return statement;
-}
-console.log(senshi(sailorJupiter));
+//     for (var i = 0; i < senshi1.attacks.length; i++) {
+//         if (i === sailorJupiter.attacks.length - 1) {
+//             statement += `and ${sailorJupiter.attacks[i]}.`;
+//         } else {
+//             statement += `${sailorJupiter.attacks[i]}, `;
+//         }
+//     }
+//     return statement;
+// }
+// console.log(senshi(sailorJupiter));
 
 // var sailorMoon = {
 //     name: "Usako",
@@ -159,3 +159,139 @@ console.log(senshi(sailorJupiter));
 // console.log(Object.keys(pets));
 // pets.cats = 5 
 // console.log(pets);
+
+// var burrito = {
+//   tortilla: 'wheat',
+//   protein: 'sofritas',
+//   cheese: false,
+//   rice: 'brown',
+//   beans: 'black',
+//   guacamole: false,
+//   spiciness: 1
+// }
+// function describeBurrito(burrito) {
+//   var statement = `A ${burrito.protein} on a ${burrito.tortilla} tortilla, with ${burrito.beans} bean, ${burrito.rice} rice, and its  spiciness is a level ${burrito.spiciness}, `
+  
+//     if (burrito.spiciness === 3) { 
+//         statement += "very very very spicy.";
+//     } else if (burrito.spiciness === 2) {
+//        statement += "meduim spicy."; 
+//     } else if (burrito.spiciness === 1) {
+//       statement += "lightly spicy."
+// } else {
+//         statement += "not spicy.";
+//     }
+
+// return statement; 
+// }
+// console.log(describeBurrito(burrito));
+
+var burrito = {
+    tortilla: ["white or whole wheat"],
+    protein: ["beef, chicken, or pork"],
+    cheese: "queso blanco or no cheese",
+    rice: ["white or brown"],
+    beans: ["black or pinto"],
+    guac: false,
+    spiciness: 3
+}
+function describeBurrito(burrito) {
+    var statement = `A delicious ${burrito.protein} burrito, with a ${burrito.tortilla} tortilla, with ${burrito.cheese}, ${burrito.rice} rice, and ${burrito.beans} beans and a spiciness of ${burrito.spiciness}, `
+        if (burrito.spiciness === 3) {
+            statement += "very very very spicy.";
+        } else if (burrito.spiciness === 2) {
+            statement += "very very spicy"; 
+        } else if (burrito.spiciness === 1) {
+            statement += "lightly spicy.";
+        } else {
+            statement += "not spicy.";
+        }
+ 
+ return statement;
+}
+console.log(describeBurrito(burrito));
+
+1. MAKING AN OBJECT
+// Create a variable called burrito whose value is an object
+// var burrito = {
+//   tortilla: ["white", "whole wheat"],
+//   protein: ["beef", "chicken", "pork"],
+//   cheese: true,
+//   rice: ["white", "brown", "undefined"],
+//   beans: ["black", "pinto", "undefined"],
+//   guac: false,
+//   spicyness: 
+// };
+
+// // The object should have the following keys: 
+// // tortilla, whose value is a string of "white" or "whole wheat"
+// // protein, whose value is a string of whatever protein you like in your burrito
+// // cheese, whose value is a boolean
+// // rice, whose value is a string of "white" or "brown" OR else undefined
+// // beans, whose value is a string of "black" or "pinto" OR else undefined
+// // guacamole, whose value is a boolean 
+// // spiciness, whose value is a number between 0 and 3 inclusive
+
+
+
+// // 2. ACCESSING VALUES
+// // Use console.log() to print the whole burrito object to the console
+// console.log("------", burrito);
+// // Use console.log() and dot notation to print the cheese boolean value to the console
+// console.log("Cheese", burrito.cheese);
+// // Use console.log() to print the protein string to the console
+// console.log("------", burrito.protein);
+
+
+// // 3. UPDATING VALUES
+// // Use dot notation and the assignment operator to CHANGE the protein string of the burrito object 
+// burrito.protein.push("Veggie") 
+// console.log("------", burrito);
+// // Update the spiciness value of the burrito object 
+// burrito.spicyness = 2 
+// console.log("-------", burrito);
+
+// // 4. CREATE YOUR OWN
+// // Create 5 more objects 
+// // Idea: make an object describing a character from the last show you devoured
+// // Idea: make an object describing your pet
+// // Idea: make an object describing a grocery list
+// var character = {
+//   hair: "blonde",
+//   eyes: "blue",
+//   height: "5'4",
+//   weight: "125 lbs"
+//   senshi: true
+// }
+// var snickers = {
+//   cat: true,
+//   weight: "10lbs",
+//   color: "orange, white and black"
+// }
+
+// var groceryList = {
+//   eggs: "1 dozen",
+//   balsamic: 1,
+//   peaches: 5,
+//   tomato: 2,
+//   salad: 1,
+//   cucumner: 2
+// }
+
+// var car = {
+//   make: "Toyota",
+//   mode: "4Runner",
+//   color: "blue",
+//   year: 2019
+// }
+
+// var parkingLot = {
+//   toyotas: 39,
+//   hondas: 25,
+//   tesla: 16,
+//   chevorlets: 35,
+//   fords: 23,
+//   kias: 2, 
+//   jaguars: 1
+// }
+  
