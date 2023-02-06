@@ -32,16 +32,49 @@
 // zoo.rhino = 6;
 // console.log(Object.keys(zoo));
 
-// var pet = {
-//     name: "Kupo",
-//     age: "2",
-//     breed: "Doberman, Great pyanesse",
-//     hobbies: "Chasing the cats and tearing up tennis balls.",
-//     dog: true
-// };
-// function speak() {
-//     console.log("Why am I so cute?")
-// }
+var pet = {
+    name: "Kupo",
+    age: "2",
+    breed: "Doberman, Great pyanesse",
+    hobbies: "Chasing the cats and tearing up tennis balls.",
+    dog: true
+}
+function speak() {
+    console.log("Why am I so cute?");
+}
+speak()
+console.log(pet)
+
+var user3 = {
+    name: "Oscar",
+    age: 7,
+    breed: "Shih-tzu, mostly",
+    hobbies: ["Following Sodie around", "Peeing", "Carrying stuffed animals around the house"],
+  }
+  
+  // 1. Access the value of user3
+  console.log(user3)
+  console.log(Object.values(user3))
+  // // // 2. Access the value of the name of user3
+  console.log(user3.name)
+  
+  // // // 3. Add a new property of your choosing
+  user3.weight = "10lbs";
+  // // // 4. Check the value of user3 again
+  console.log(user3);
+  // // // 5. Change the value of the name of user3
+  user3.name ="Sebastian"
+  // // // 6. Check the value of user3
+  console.log(user3)
+  // // // 7. Declare a method on user3 that logs "Why am I so cute?" to the console
+  function speak() {
+    console.log ("Why am I so cute?");
+  }
+  speak()
+  // // // 8. Check the value of user3. Do you see your method?
+  console.log(Object.values(user3))
+  // // // 9. Use user3 to log "Why am I so cute?"
+  console.log(speak());
 
 // console.log(pet);
 // console.log(pet.name);
@@ -186,32 +219,32 @@
 // }
 // console.log(describeBurrito(burrito));
 
-var burrito = {
-    tortilla: ["white or whole wheat"],
-    protein: ["beef, chicken, or pork"],
-    cheese: "queso blanco or no cheese",
-    rice: ["white or brown"],
-    beans: ["black or pinto"],
-    guac: false,
-    spiciness: 3
-}
-function describeBurrito(burrito) {
-    var statement = `A delicious ${burrito.protein} burrito, with a ${burrito.tortilla} tortilla, with ${burrito.cheese}, ${burrito.rice} rice, and ${burrito.beans} beans and a spiciness of ${burrito.spiciness}, `
-        if (burrito.spiciness === 3) {
-            statement += "very very very spicy.";
-        } else if (burrito.spiciness === 2) {
-            statement += "very very spicy"; 
-        } else if (burrito.spiciness === 1) {
-            statement += "lightly spicy.";
-        } else {
-            statement += "not spicy.";
-        }
+// var burrito = {
+//     tortilla: ["white or whole wheat"],
+//     protein: ["beef, chicken, or pork"],
+//     cheese: "queso blanco or no cheese",
+//     rice: ["white or brown"],
+//     beans: ["black or pinto"],
+//     guac: false,
+//     spiciness: 3
+// }
+// function describeBurrito(burrito) {
+//     var statement = `A delicious ${burrito.protein} burrito, with a ${burrito.tortilla} tortilla, with ${burrito.cheese}, ${burrito.rice} rice, and ${burrito.beans} beans and a spiciness of ${burrito.spiciness}, `
+//         if (burrito.spiciness === 3) {
+//             statement += "very very very spicy.";
+//         } else if (burrito.spiciness === 2) {
+//             statement += "very very spicy"; 
+//         } else if (burrito.spiciness === 1) {
+//             statement += "lightly spicy.";
+//         } else {
+//             statement += "not spicy.";
+//         }
  
- return statement;
-}
-console.log(describeBurrito(burrito));
+//  return statement;
+// }
+// console.log(describeBurrito(burrito));
 
-1. MAKING AN OBJECT
+// 1. MAKING AN OBJECT
 // Create a variable called burrito whose value is an object
 // var burrito = {
 //   tortilla: ["white", "whole wheat"],
